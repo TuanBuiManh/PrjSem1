@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>your results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/cart_items.css" type="text/css">
+    <link rel="stylesheet" href="../css/footer.css" type="text/css">
+    <link rel="stylesheet" href="../css/header.css" type="text/css">
+    <style>
+        .col-4 a{
+            color: #3d3d3d;
+        }
+        .col-4 h4{
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+<div class="headera">
+    <div class="containera">
+        <%- include("header")%>
+    </div>
+</div>
+
+
+
+<div class="container products" style="margin-bottom: 100px">
+
+    <h2 style="font-weight: bolder">Your Results</h2>
+    <div class="col-md-12">
+        <% for(i=0;i<hanghoa.length;i++){ %>
+            <div class="">
+                <div class="col-4 col-md-3">
+
+                    <img src="<%= hanghoa[i].Img %>">
+                    <h4><a href="/product-details?id=<%= hanghoa[i].ID %>"> <%= hanghoa[i].TenSP %></a></h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p><%= hanghoa[i].Gia %> $</p>
+                    <a href="javascript:void(0)" class="btnb btn-buy-now" role="button">Add Cart </a>
+
+                </div>
+            </div>
+        <%} %>
+    </div>
+</div>
+
+<%- include("footer")%>
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/header-rs.js"></script>
+<script src="../js/header-scorll.js"></script>
+<script src="../js/click-buy.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    <link rel="stylesheet" href="../css/home.css" type="text/css" >
+    <link rel="stylesheet" href="../css/footer.css" type="text/css">
+    <link rel="stylesheet" href="../css/header.css" type="text/css">
+    <link rel="stylesheet" href="../css/style2.css" type="text/css">
+    <link rel="stylesheet" href="../css/compare.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+<body>
+<!--header-->
+<div class="headera">
+    <div class="containera">
+        <%- include("header")%>
+    </div>
+</div>
+<!--single product details-->
+<div class="containerb single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="../images/product-1.jpg" width="100%" id="ProductImg">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="../images/gallery-1.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="../images/gallery-2.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="../images/gallery-3.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="../images/gallery-4.jpg" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <p>Home / T-Shirt</p>
+            <h1>Tommy Hilfiger</h1>
+            <h4>200 $</h4>
+            <select>
+                <option>Select Size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>Large</option>
+                <option>Medium</option>
+                <option>Small</option>
+            </select>
+            <input style="margin-left: 15px;padding-right: 10px" onclick="var result = document.getElementById('quantity');
+                var qty = result.value; if( !isNaN(qty) &amp; qty > 1 ) result.value--;return false;" type='button' value='-' />
+            <input style="padding-left: 21px" id='quantity' min='1' name='quantity' type='text' value='1' />
+            <input style="padding-right: 10px" onclick="var result = document.getElementById('quantity');
+                 var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type='button' value='+' />
+            <a href="" class="btn">Add To Cart</a>
+
+            <p><b>Description</b></p>
+            <p>Whether it’s an embroidered logo, a bold graphic print or its iconic red, white and blue colour-blocking, there’s no mistaking Tommy Hilfiger. Flying the flag for all things retro 90s, scroll our Tommy Hilfiger at ASOS edit, featuring wardrobe-ready casualwear – think T-shirts,</p>
+            <table border="0" class="more-details">
+                <tr>
+                    <th rowspan="6"><p>Product Details</p></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+            <table border="0" class="more-details">
+                <tr>
+                    <th><p>Product Code :<span>22223456</span></p></th>
+                    <td></td>
+                </tr>
+            </table>
+            <table border="0" class="more-details">
+                <tr>
+                    <th rowspan="2"><p>Quantity available : <span>50</span> </p></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+            <table border="0" class="more-details">
+                <tr>
+                    <th><p>Look After Me :  <span>Machine wash according to instructions on care label </span></p></th>
+                    <td></td>
+                </tr>
+            </table>
+            <table border="0" class="more-details">
+                <tr>
+                    <th rowspan="3"><p>Ingredient : <span> 100% Cotton. </span></p></th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!--compare-->
+<div class="small-container">
+    <h2 class="titlepd">Compare Products</h2>
+    <div class="compare">
+        <div class="row">
+            <div class="compare-product" id="1st">
+                <img src="../images/cp-1.jpg">
+                <h3>Nike Dri-FIT t-shirt in black</h3>
+                <table border="0" class="more-details">
+                    <tr>
+                        <th rowspan="6"><p>Product Details:</p></th>
+                        <td>For the rotation</td>
+                    </tr>
+                    <tr>
+                        <td>Crew neck</td>
+                    </tr>
+                    <tr>
+                        <td>Short sleeves</td>
+                    </tr>
+                    <tr>
+                        <td>Nike branded print to chest</td>
+                    </tr>
+                    <tr>
+                        <td>Regular fit</td>
+                    </tr>
+                    <tr>
+                        <td>True to size</td>
+                    </tr>
+                </table>
+                <table border="0" class="more-details">
+                    <tr>
+                        <th rowspan="1"><p>Product Code :</p></th>
+                        <td>2018265</td>
+                    </tr>
+                </table>
+                <table border="0" class="more-details">
+                    <tr>
+                        <th rowspan="1"><p>Quantity available :</p></th>
+                        <td>127</td>
+                    </tr>
+                </table>
+                <table border="0" class="more-details">
+                    <tr>
+                        <th><p>Look After Me :</p></th>
+                        <td>Machine wash according to instructions on care label</td>
+                    </tr>
+                </table>
+                <table border="0" class="more-details">
+                    <tr>
+                        <th rowspan="2"><p>Size & Fit:</p></th>
+                        <td>Model's height: 6'2.5”/189 cm</td>
+                    </tr>
+                    <tr>
+                        <td>Model is wearing: Size Medium</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="compare-product" id="2nd">
+                <img src="../images/cp-2.jpg">
+                <h3>Topman longline Berlin t-shirt in black</h3>
+                <table border="0" class="more-details">
+                    <tr>
+                        <th rowspan="6"><p>Product Details:</p></th>
+                        <td>When the T-shirt weather hits</td>
+                    </tr>
+                    <tr>
+                        <td>Crew neck</td>
+                    </tr>
+                    <tr>
+                        <td>Short sleeves</td>
+                    </tr>
+                    <tr>
+                        <td>'Berlin' city print to chest</td>
+                    </tr>
+                    <tr>
+                        <td>Cut longer than standard length</td>
+                    </tr>
+                    <tr>
+                        <td>Regular fit</td>
+                    </tr>
+                </table>
+                <table border="0" class="more-details">
+                    <tr>
+                        <th><p>Product Code :</p></th>
+                        <td>2016106</td>
+                    </tr>
+                </table>
+                <table border="0" class="more-details">
+                    <tr>
+                        <th><p>Quantity available :</p></th>
+                        <td>275</td>
+                    </tr>
+                </table>
+                <table border="0" class="more-details">
+                    <tr>
+                        <th><p>Look After Me :</p></th>
+                        <td>Machine wash according to instructions on care label</td>
+                    </tr>
+                </table>
+                <table border="0" class="more-details">
+                    <tr>
+                        <th rowspan="3"><p>Size & Fit:</p></th>
+                        <td>Model's height: 6'2.5”/189 cm</td>
+                    </tr>
+                    <tr>
+                        <td>Model is wearing: Size Medium</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--comment-->
+<div class="small-container">
+    <div class="comment-box">
+        <h2>Product Reviews</h2>
+        <div class="comment">
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="comment-row">
+                <div class="avatar">
+                    <img src="../images/images_comment.jpg">
+                </div>
+                <div class="comment-date">
+                    <p>1:45 AM 9/22/2021</p>
+                </div>
+            </div>
+            <div class="comment-body">
+                <p>The goods are always beautiful. Cheap price great quality</p>
+            </div>
+        </div>
+        <div class="comment-reply">
+            <div class="comment-row">
+                <div class="avatar">
+                    <img src="../images/images_comment.jpg">
+                </div>
+                <div class="comment-date">
+                    <p>10:00 AM 9/23/2021</p>
+                </div>
+            </div>
+            <div class="comment-body">
+                <p>Delivery took a long time<span class=""></span></p>
+            </div>
+        </div>
+        <div class="comment-reply">
+            <div class="comment-row">
+                <div class="avatar">
+                    <img src="../images/images_comment.jpg">
+                </div>
+                <div class="comment-date">
+                    <p>10:00 AM 9/23/2021</p>
+                </div>
+            </div>
+            <div class="comment-body">
+                <p>Nice shirt, true to the picture. </p>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <div class="comment-row">
+                <div class="avatar">
+                    <img src="../images/images_comment.jpg">
+                </div>
+                <div class="comment-date">
+                    <p>9:15 AM 9/24/2021</p>
+                </div>
+            </div>
+            <div class="comment-body">
+                <p>Very good store, fast delivery </p>
+            </div>
+        </div>
+        <div class="comment-reply">
+            <div class="comment-row">
+                <div class="avatar">
+                    <img src="../images/images_comment.jpg">
+                </div>
+                <div class="comment-date">
+                    <p>10:00 AM 9/23/2021</p>
+                </div>
+            </div>
+            <div class="comment-body">
+                <p>Good service shop</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<%- include("footer")%>
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+    SmallImg[0].onclick = function (){
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function (){
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function (){
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function (){
+        ProductImg.src = SmallImg[3].src;
+    }
+</script>
+<!--js for comment-->
+
+
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/header-rs.js"></script>
+<script src="../js/header-scorll.js"></script>
+<script src="../js/click-buy.js"></script>
+</body>
+</html>
+</body>
+</html>
